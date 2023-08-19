@@ -1,0 +1,87 @@
+<mxfile host="Electron" modified="2023-08-19T10:17:52.403Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="EUwrC0F7GHe7RiasPwmj" version="21.6.8" type="device">
+  <diagram name="第 1 版本" id="rriLU9W50NcAHfSWOSOc">
+    <mxGraphModel dx="1059" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3sc8x6C5vZPuxA7bNsMm-1" target="3sc8x6C5vZPuxA7bNsMm-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-1" value="开始" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="247" y="267" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3sc8x6C5vZPuxA7bNsMm-2" target="3sc8x6C5vZPuxA7bNsMm-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-8" value="读取文件数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3sc8x6C5vZPuxA7bNsMm-5">
+          <mxGeometry x="0.2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-2" value="原始文件夹" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="247" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3sc8x6C5vZPuxA7bNsMm-4" target="3sc8x6C5vZPuxA7bNsMm-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-9" value="匹配文件数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3sc8x6C5vZPuxA7bNsMm-7">
+          <mxGeometry x="0.0885" y="-4" relative="1" as="geometry">
+            <mxPoint x="10" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3sc8x6C5vZPuxA7bNsMm-4" target="3sc8x6C5vZPuxA7bNsMm-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-4" value="文件名&lt;br&gt;文件哈希值&lt;br&gt;文件元数据&lt;br&gt;文件大小" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="247" y="490" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-6" value="1.xxx&lt;br&gt;2.xxx&lt;br&gt;...&lt;br&gt;n.xxx" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="31" y="490" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3sc8x6C5vZPuxA7bNsMm-11" target="3sc8x6C5vZPuxA7bNsMm-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-14" value="无&lt;br&gt;写入列表&lt;br&gt;存入唯一文件文件夹" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3sc8x6C5vZPuxA7bNsMm-13">
+          <mxGeometry x="-0.2071" y="2" relative="1" as="geometry">
+            <mxPoint x="50" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3sc8x6C5vZPuxA7bNsMm-11" target="3sc8x6C5vZPuxA7bNsMm-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3sc8x6C5vZPuxA7bNsMm-11" target="3sc8x6C5vZPuxA7bNsMm-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-20" value="有相同文件" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3sc8x6C5vZPuxA7bNsMm-19">
+          <mxGeometry x="-0.4889" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-11" value="有无相同文件" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="267" y="650" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3sc8x6C5vZPuxA7bNsMm-15" target="3sc8x6C5vZPuxA7bNsMm-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-15" value="唯一文件文件夹" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="31" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3sc8x6C5vZPuxA7bNsMm-18" target="3sc8x6C5vZPuxA7bNsMm-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-18" value="重复文件文件夹&lt;br&gt;以唯一文件列表命名文件夹" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="247" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3sc8x6C5vZPuxA7bNsMm-21" target="3sc8x6C5vZPuxA7bNsMm-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-21" value="删除源文件" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="247" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3sc8x6C5vZPuxA7bNsMm-24" value="结束" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="247" y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
