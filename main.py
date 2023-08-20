@@ -2,11 +2,8 @@
 #File Duplicates Remover
 
 import hashlib
-import json
 import sys
 
-import exifread
-import ffmpeg
 import os
 import shutil
 
@@ -69,14 +66,17 @@ def openFiles(filePath, counter):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-    dirName = "test"
+    dirName = "mate30"
     fileList = os.listdir(dirName)
     counter = 0
 
     for file in fileList:
         print("counter is " + str(counter))
         filePath = dirName + "/" + file
-        if file.count("(1)"):
+        if file.startswith("._"):
+            print("file name with ._ "  + filePath)
+            # os.remove(filePath)
+        elif file.count("(1)") and not file.startswith("._"):
             print("file name with (1) " + filePath)
             os.remove(filePath)
         else:
