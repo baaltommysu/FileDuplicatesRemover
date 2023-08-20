@@ -21,12 +21,16 @@ def writeToList(filePath, fileHash, fileSize):
 
 def checkFileExists(fileHash, fileSize):
     result = 0
-    with open("singleFileList","r") as singleFileList:
-        for line in singleFileList:
-            elem = line.split("\t")
-            if fileHash == elem[1]:
-                print("file exists " + elem[0] + " " + elem[2])
-                result = elem[0]
+    if not os.path.exists("singleFileList"):
+        with open("singleFileList", "w") as file:
+            file.write("file path\t file hash\t file size")
+    else:
+        with open("singleFileList","r") as singleFileList:
+            for line in singleFileList:
+                elem = line.split("\t")
+                if fileHash == elem[1]:
+                    print("file exists " + elem[0] + " " + elem[2])
+                    result = elem[0]
     return result
 
 def moveFileToDuplicatesDir(singleFilePath, filePath):
@@ -36,7 +40,6 @@ def moveFileToDuplicatesDir(singleFilePath, filePath):
     if not os.path.isdir(duplicateFilePath):
         os.mkdir(duplicateFilePath)
     try :
-        print("here is singleFilePath " + str(singleFilePath))
         shutil.copy(singleFilePath, duplicateFilePath)
         shutil.move(filePath,duplicateFilePath)
     except IOError as e:
@@ -68,11 +71,14 @@ if __name__ == '__main__':
 
     dirName = "test"
     fileList = os.listdir(dirName)
-
     counter = 0
 
     for file in fileList:
-        filePath = dirName + "/" + file
         print("counter is " + str(counter))
-        counter = openFiles(filePath, counter)
+        filePath = dirName + "/" + file
+        if file.count("(1)"):
+            print("file name with (1) " + filePath)
+            os.remove(filePath)
+        else:
+            counter = openFiles(filePath, counter)
 
